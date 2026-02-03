@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elena Marlowe | Fine Art Photography</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="loading-screen" aria-hidden="true">
+      <div class="loading-mark">
+        <span>EM</span>
+        <div class="loading-line"></div>
+      </div>
+    </div>
+
+    <header class="site-header" id="top">
+      <nav class="navbar">
+        <a class="brand" href="#top">Elena Marlowe</a>
+        <button class="menu-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#top">Home</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#blog">Stories</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <button class="mode-toggle" aria-label="Toggle dark mode">
+          <span class="mode-icon">◐</span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="hero-media">
+          <div class="hero-slide" role="img" aria-label="Cinematic portrait"></div>
+        </div>
+        <div class="hero-content">
+          <p class="hero-eyebrow">Fine Art Photographer · New York</p>
+          <h1>Elena Marlowe</h1>
+          <p class="hero-tagline">Capturing moments, telling stories through luminous, cinematic imagery.</p>
+          <div class="hero-actions">
+            <a class="primary-btn" href="#portfolio">View Portfolio</a>
+            <a class="ghost-btn" href="#contact">Book a Session</a>
+          </div>
+        </div>
+        <div class="hero-scroll">Scroll</div>
+      </section>
+
+      <section class="portfolio" id="portfolio">
+        <div class="section-heading">
+          <p class="section-eyebrow">Portfolio</p>
+          <h2>Curated visual narratives</h2>
+          <p>
+            A selection of portraits, weddings, travel stories, and quiet street scenes captured with a
+            cinematic lens.
+          </p>
+        </div>
+        <div class="filter-bar" role="tablist">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="portraits">Portraits</button>
+          <button class="filter-btn" data-filter="weddings">Weddings</button>
+          <button class="filter-btn" data-filter="travel">Travel</button>
+          <button class="filter-btn" data-filter="street">Street</button>
+          <button class="filter-btn" data-filter="nature">Nature</button>
+        </div>
+        <div class="masonry-grid">
+          <article
+            class="masonry-item"
+            data-category="portraits"
+            data-title="Luminous"
+            data-location="Paris, FR"
+            data-exif="85mm · f/1.4 · ISO 200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1500917293891-ef795e70e1f6?auto=format&fit=crop&w=1200&q=80"
+              alt="Portrait in soft light"
+              loading="lazy"
+            />
+            <div class="masonry-overlay">
+              <h3>Luminous</h3>
+              <p>Paris, FR</p>
+              <span>85mm · f/1.4 · ISO 200</span>
+            </div>
+          </article>
+          <article
+            class="masonry-item"
+            data-category="weddings"
+            data-title="Vows"
+            data-location="Lake Como, IT"
+            data-exif="50mm · f/2.0 · ISO 320"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1200&q=80"
+              alt="Wedding embrace"
+              loading="lazy"
+            />
+            <div class="masonry-overlay">
+              <h3>Vows</h3>
+              <p>Lake Como, IT</p>
+              <span>50mm · f/2.0 · ISO 320</span>
+            </div>
+          </article>
+          <article
+            class="masonry-item"
+            data-category="travel"
+            data-title="Golden Hour"
+            data-location="Marrakech, MA"
+            data-exif="35mm · f/2.8 · ISO 100"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=80"
+              alt="Travel destination"
+              loading="lazy"
+            />
+            <div class="masonry-overlay">
+              <h3>Golden Hour</h3>
+              <p>Marrakech, MA</p>
+              <span>35mm · f/2.8 · ISO 100</span>
+            </div>
+          </article>
+          <article
+            class="masonry-item"
+            data-category="street"
+            data-title="Blue Hour"
+            data-location="Tokyo, JP"
+            data-exif="28mm · f/3.5 · ISO 640"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1449824913935-59a10b8d2000?auto=format&fit=crop&w=1200&q=80"
+              alt="Street photography"
+              loading="lazy"
+            />
+            <div class="masonry-overlay">
+              <h3>Blue Hour</h3>
+              <p>Tokyo, JP</p>
+              <span>28mm · f/3.5 · ISO 640</span>
+            </div>
+          </article>
+          <article
+            class="masonry-item"
+            data-category="nature"
+            data-title="Stillness"
+            data-location="Yosemite, US"
+            data-exif="24mm · f/8 · ISO 100"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?auto=format&fit=crop&w=1200&q=80"
+              alt="Nature landscape"
+              loading="lazy"
+            />
+            <div class="masonry-overlay">
+              <h3>Stillness</h3>
+              <p>Yosemite, US</p>
+              <span>24mm · f/8 · ISO 100</span>
+            </div>
+          </article>
+          <article
+            class="masonry-item"
+            data-category="portraits"
+            data-title="Quiet Muse"
+            data-location="London, UK"
+            data-exif="85mm · f/1.8 · ISO 400"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=1200&q=80"
+              alt="Portrait closeup"
+              loading="lazy"
+            />
+            <div class="masonry-overlay">
+              <h3>Quiet Muse</h3>
+              <p>London, UK</p>
+              <span>85mm · f/1.8 · ISO 400</span>
+            </div>
+          </article>
+          <article
+            class="masonry-item"
+            data-category="weddings"
+            data-title="Veil"
+            data-location="Napa, US"
+            data-exif="50mm · f/2.2 · ISO 200"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1529634806980-85c3dd6d34ac?auto=format&fit=crop&w=1200&q=80"
+              alt="Wedding details"
+              loading="lazy"
+            />
+            <div class="masonry-overlay">
+              <h3>Veil</h3>
+              <p>Napa, US</p>
+              <span>50mm · f/2.2 · ISO 200</span>
+            </div>
+          </article>
+          <article
+            class="masonry-item"
+            data-category="travel"
+            data-title="Desert"
+            data-location="Sahara, DZ"
+            data-exif="35mm · f/4 · ISO 160"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1500534314209-a26db0f5a0f7?auto=format&fit=crop&w=1200&q=80"
+              alt="Desert travel"
+              loading="lazy"
+            />
+            <div class="masonry-overlay">
+              <h3>Desert</h3>
+              <p>Sahara, DZ</p>
+              <span>35mm · f/4 · ISO 160</span>
+            </div>
+          </article>
+          <article
+            class="masonry-item"
+            data-category="street"
+            data-title="Midnight"
+            data-location="Berlin, DE"
+            data-exif="35mm · f/2.8 · ISO 800"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=80"
+              alt="City street"
+              loading="lazy"
+            />
+            <div class="masonry-overlay">
+              <h3>Midnight</h3>
+              <p>Berlin, DE</p>
+              <span>35mm · f/2.8 · ISO 800</span>
+            </div>
+          </article>
+          <article
+            class="masonry-item"
+            data-category="nature"
+            data-title="Fogline"
+            data-location="Reykjavík, IS"
+            data-exif="24mm · f/11 · ISO 160"
+          >
+            <img
+              src="https://images.unsplash.com/photo-1455218873509-8097305ee378?auto=format&fit=crop&w=1200&q=80"
+              alt="Nature fog"
+              loading="lazy"
+            />
+            <div class="masonry-overlay">
+              <h3>Fogline</h3>
+              <p>Reykjavík, IS</p>
+              <span>24mm · f/11 · ISO 160</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="about-image">
+          <img
+            src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80"
+            alt="Photographer portrait"
+            loading="lazy"
+          />
+        </div>
+        <div class="about-content">
+          <p class="section-eyebrow">About</p>
+          <h2>Stories crafted in light & shadow</h2>
+          <p>
+            Elena Marlowe is a fine art photographer creating cinematic narratives for discerning clients.
+            With a background in editorial storytelling, her work blends quiet emotion, intentional
+            composition, and luminous color palettes.
+          </p>
+          <ul class="about-list">
+            <li>Editorial portraiture &amp; fashion campaigns</li>
+            <li>Destination weddings &amp; elopements</li>
+            <li>Luxury travel assignments</li>
+            <li>Commercial lifestyle imagery</li>
+          </ul>
+          <div class="signature">E.M.</div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="section-heading">
+          <p class="section-eyebrow">Services</p>
+          <h2>Bespoke photography experiences</h2>
+          <p>Tailored coverage designed to reflect your story. Contact for a private quote and availability.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-icon">✦</span>
+            <h3>Wedding Photography</h3>
+            <p>Full-day coverage with a cinematic, editorial finish and custom heirloom albums.</p>
+            <span class="service-note">Contact for quote</span>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">✧</span>
+            <h3>Portrait Sessions</h3>
+            <p>Intimate sessions crafted with soft lighting, refined styling, and timeless direction.</p>
+            <span class="service-note">Starting at $850</span>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">✦</span>
+            <h3>Commercial Shoots</h3>
+            <p>Luxury lifestyle imagery for brands, hotels, and creative campaigns worldwide.</p>
+            <span class="service-note">Contact for quote</span>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">✧</span>
+            <h3>Travel Assignments</h3>
+            <p>On-location storytelling for tourism boards, magazines, and private clientele.</p>
+            <span class="service-note">Limited dates</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="testimonials" aria-label="Testimonials">
+        <div class="section-heading">
+          <p class="section-eyebrow">Testimonials</p>
+          <h2>Words from remarkable clients</h2>
+        </div>
+        <div class="testimonial-carousel">
+          <button class="carousel-btn prev" aria-label="Previous testimonial">←</button>
+          <div class="testimonial-track">
+            <article class="testimonial-card active">
+              <p class="quote">“Elena captured every emotion with grace and artistry. Our gallery feels like a film.”</p>
+              <div class="client">
+                <span class="client-name">Sophia &amp; James</span>
+                <span class="client-role">Lake Como Wedding</span>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p class="quote">“The imagery elevated our brand instantly. Every frame feels premium and intentional.”</p>
+              <div class="client">
+                <span class="client-name">Maison Atelier</span>
+                <span class="client-role">Commercial Campaign</span>
+              </div>
+            </article>
+            <article class="testimonial-card">
+              <p class="quote">“A calming presence, a visionary eye. Our portraits feel timeless and intimate.”</p>
+              <div class="client">
+                <span class="client-name">Lina Chen</span>
+                <span class="client-role">Portrait Session</span>
+              </div>
+            </article>
+          </div>
+          <button class="carousel-btn next" aria-label="Next testimonial">→</button>
+        </div>
+      </section>
+
+      <section class="blog" id="blog">
+        <div class="section-heading">
+          <p class="section-eyebrow">Journal</p>
+          <h2>Recent photo stories</h2>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1441974231531-c6227db76b6e?auto=format&fit=crop&w=1200&q=80"
+              alt="Forest editorial"
+              loading="lazy"
+            />
+            <div>
+              <p class="blog-meta">Travel Story · 8 min read</p>
+              <h3>Whispering Pines in the Pacific Northwest</h3>
+            </div>
+          </article>
+          <article class="blog-card">
+            <img
+              src="https://images.unsplash.com/photo-1469474968028-56623f02e42e?auto=format&fit=crop&w=1200&q=80"
+              alt="Wedding editorial"
+              loading="lazy"
+            />
+            <div>
+              <p class="blog-meta">Weddings · 6 min read</p>
+              <h3>An Intimate Vow Exchange on the Amalfi Coast</h3>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact" id="contact">
+        <div class="section-heading">
+          <p class="section-eyebrow">Contact</p>
+          <h2>Let’s create something timeless</h2>
+          <p>Share your vision and preferred dates. You’ll receive a response within 48 hours.</p>
+        </div>
+        <div class="contact-grid">
+          <form class="contact-form">
+            <label>
+              Name
+              <input type="text" name="name" placeholder="Your name" />
+            </label>
+            <label>
+              Email
+              <input type="email" name="email" placeholder="you@email.com" />
+            </label>
+            <label class="full">
+              Message
+              <textarea name="message" placeholder="Tell me about your story"></textarea>
+            </label>
+            <button class="primary-btn" type="submit">Send inquiry</button>
+          </form>
+          <div class="contact-details">
+            <div>
+              <h3>Direct</h3>
+              <p>hello@elenamarlowe.com</p>
+              <p>@elenamarlowephoto</p>
+              <p>WhatsApp: +1 212 555 0199</p>
+            </div>
+            <div class="map-card">
+              <p>Based in New York · Available worldwide</p>
+              <div class="map-placeholder">Google Map Embed</div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>© 2024 Elena Marlowe. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://instagram.com" aria-label="Instagram">Instagram</a>
+        <a href="https://behance.net" aria-label="Behance">Behance</a>
+        <a href="https://twitter.com" aria-label="Twitter">Twitter</a>
+      </div>
+    </footer>
+
+    <div class="lightbox" aria-hidden="true">
+      <button class="lightbox-close" aria-label="Close">×</button>
+      <button class="lightbox-prev" aria-label="Previous">←</button>
+      <img class="lightbox-image" alt="Expanded view" />
+      <button class="lightbox-next" aria-label="Next">→</button>
+      <div class="lightbox-caption">
+        <h4 class="lightbox-title"></h4>
+        <p class="lightbox-location"></p>
+        <p class="lightbox-exif"></p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
